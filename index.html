@@ -11,28 +11,97 @@
           <img src="img/index-logo.svg" width="154" height="64" alt="Логотип магазина «Глейси»">
         </a>
         <ul>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="#">Доставка и оплата</a></li>
-          <li><a href="#">О компании</a></li>
+          <li>
+            <a href="catalog.html">Каталог</a>
+            <ul >
+              <li>
+                <p>Новинки</p>
+              </li>
+              <li>
+                <a href="catalog.html">Сливочное</a>
+              </li>
+              <li>
+                <a href="#">Щербеты</a>
+              </li>
+              <li>
+                <a href="#">Фруктовый лед</a>
+              </li>
+              <li>
+                <a href="#">Мелорин</a>
+              </li>
+            </ul>
+
+          </li>
+          <li><a href="delivery.html">Доставка и оплата</a></li>
+          <li><a href="about.html">О компании</a></li>
         </ul>
         <ul>
-          <li><a href="#">Поиск</a></li>
-          <li><a href="#">Войти</a></li>
-          <li><a href="#">Корзина</a></li>
+          <li>
+
+            <a href="#">
+              <span>Поиск</span>
+            </a>
+
+              <ul >
+                <li>
+                  <h2 class="visually-hidden">Поиск</h2>
+                  <form name="search" method="post" action="https://echo.htmlacademy.ru">
+                    <input type="search" name="search-text" placeholder="Что ищем?" aria-label="Поиск по сайту">
+                  </form>
+                </li>
+              </ul>
+
+
+          </li>
+          <li>
+
+            <a href="login.html">Войти</a>
+
+            <ul>
+              <li>
+                <h2 class="visually-hidden">Личный кабинет</h2>
+                <form name="login" method="post" action="https://echo.htmlacademy.ru">
+                  <p class="login-item">
+                    <label for="login-email" class="visually-hidden">Электронная почта</label>
+                    <input type="email" name="login-email" id="login-email" placeholder="email@example.com" required="">
+                  </p>
+                  <p >
+                    <label for="login-password" class="visually-hidden">Пароль</label>
+                    <input type="password" name="login-password" id="login-password" placeholder="••••••••" required="">
+                  </p>
+                  <div >
+                    <p>
+                      <a href="#">Забыли пароль?</a>
+                      <a href="#">Новая регистрация</a>
+                    </p>
+                    <button type="submit">Войти</button>
+                  </div>
+                </form>
+              </li>
+
+            </ul>
+
+          </li>
+          <li>
+            <a href="basket_null.html">Корзина</a>
+
+          </li>
         </ul>
       </nav>
       <p>С 10 до 20, ежедневно<br>
         <a href="tel:+78124502525">8 812 450-25-25</a></p>
     </header>
     <main>
-      <h1>Магазин «Глейси»</h1>
+      <h1 class="visually-hidden">Магазин «Глейси»</h1>
 
       <div>
         <!--Тут будет слайдер *наверное*-->
       </div>
 
+
+
       <section>
-        <h2>Акции</h2>
+        <h2 class="visually-hidden">Акции</h2>
 
         <article> <!--Тут скорее всего нужен div, но это не точно-->
           <a href="#">
@@ -56,7 +125,7 @@
 
       <section>
 
-        <h2>Популярные товары</h2>
+        <h2 class="visually-hidden">Популярные товары</h2>
 
         <ul>
           <!--Список хитов-->
@@ -122,7 +191,7 @@
 
       <section>
         <!--section потому что это секция про преимущества-->
-        <h2>Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
         <p>Магазин Глэйси — это онлайн- и офлайн-магазин
           по продаже мороженого собственного
           производства на развес</p>
@@ -190,7 +259,7 @@
 
       <section>
 
-        <h2>Адреса и телефоны</h2>
+        <h2 class="visually-hidden">Адреса и телефоны</h2>
         <!--Тут, возможно, будет карта-->
         <div>
           <p> Адрес главного офиса<br>
@@ -200,9 +269,31 @@
               <br>
               Для заказов по телефону:<br>
               <a href="tel:+78124502525">8 812 450-25-25</a><br>
-              (с 10 до 20 ежедневно)</p>
-              <a href="#">Форма обратной связи</a>
+              (с 10 до 20 ежедневно)
+          </p>
+          <a href="feedback.html">Форма обратной связи</a>
         </div>
+
+      </section>
+
+      <section>
+
+        <h2>Мы обязательно вам ответим!</h2>
+
+        <form name="callback" method="post" action="https://echo.htmlacademy.ru">
+          <p>
+            <label for="callback-name" class="visually-hidden">Как вас зовут?</label>
+            <input type="text" name="callback-name" id="callback-name" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label for="callback-email" class="visually-hidden"> Ваша почта для ответа?</label>
+            <input type="email" name="callback-email" id="callback-email" placeholder="email@example.com">
+          </p>
+          <textarea name="callnack-message" rows="8" cols="80" placeholder="В свободной форме"></textarea>
+          <button type="submit">Отправить</button>
+        </form>
+
+        <button type="button">Закрыть</button>
 
       </section>
 
@@ -212,10 +303,10 @@
 
       <div>
         <ul>
-          <li><a href="#">Твиттер</a></li>
-          <li><a href="#">Вконтакте</a></li>
-          <li><a href="#">Фейсбук</a></li>
-          <li><a href="#">Инстаграм</a></li>
+          <li><a href="https://twitter.com/">Твиттер</a></li>
+          <li><a href="https://vk.com/">Вконтакте</a></li>
+          <li><a href="https://www.facebook.com/">Фейсбук</a></li>
+          <li><a href="https://www.instagram.com/">Инстаграм</a></li>
         </ul>
       </div>
 
