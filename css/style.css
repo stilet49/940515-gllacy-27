@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Roboto";
   src:
-    url("roboto.woff2") format("woff2"),
-    url("roboto.woff") format("woff"),
-    url("robotobold.woff2") format("woff2"),
-    url("robotobold.woff") format("woff"),
-    url("robotomedium.woff2") format("woff2"),
-    url("robotomedium.woff") format("woff");
+    url("../roboto.woff2") format("woff2"),
+    url("../roboto.woff") format("woff"),
+    url("../robotobold.woff2") format("woff2"),
+    url("../robotobold.woff") format("woff"),
+    url("../robotomedium.woff2") format("woff2"),
+    url("../robotomedium.woff") format("woff");
 }
 
 body {
@@ -719,17 +719,7 @@ a.bold-href {
   z-index: 9;
 }
 
-.description a {
-  color: #ffffff;
-  border-bottom: 1px solid #adbdb4;
-}
 
-.description a:hover,
-.description a:focus,
-.description a:active {
-  color: #ffbc9e;
-  border-bottom-color: #ffbc9e;
-}
 
 .fast-view {
   position: absolute;
@@ -781,3 +771,17 @@ a.bold-href {
 .subnavigation {
   display: none;
 }
+
+.description a:hover,
+.description a:focus,
+.description a:active {
+  color: #ffbc9e;
+  border-bottom-color: #ffbc9e;
+}
+
+.description a {
+  color: #ffffff;
+  border-bottom: 1px solid #adbdb4;
+}
+
+
