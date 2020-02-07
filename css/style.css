@@ -1,26 +1,12 @@
-@font-face {
-  font-family: "Roboto";
-  src:
-    url("../roboto.woff2") format("woff2"),
-    url("../roboto.woff") format("woff"),
-    url("../robotobold.woff2") format("woff2"),
-    url("../robotobold.woff") format("woff"),
-    url("../robotomedium.woff2") format("woff2"),
-    url("../robotomedium.woff") format("woff");
-}
-
 body {
   margin: 0;
   padding: 0;
-
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 24px;
-  font-weight: 700;
+  line-height: 22px;
   color: #ffffff;
-
- background-color: #849d8f;
 }
+
 
 a {
   text-decoration: none;
@@ -402,13 +388,13 @@ a {
 
 .contact-info a:hover,
 .contact-info a:focus,
-.contact-info a:active{
+.contact-info a:active {
   color: #ffbc9e;
 }
 
 .user-info a:hover,
 .user-info a:focus,
-.user-info a:active{
+.user-info a:active {
   color: #ffbc9e;
 }
 
@@ -1008,13 +994,6 @@ a.bold-href {
   color: #ffffff;
 }
 
-/**/
-.catalog {
-  margin: 0;
-  padding:0;
-  list-style: none;
-}
-/**/
 
 .filters-sorting {
   padding-right: 25px;
