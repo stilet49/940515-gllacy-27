@@ -159,8 +159,7 @@ a {
 }
 
 .catalog-item:hover .subnavigation {
-  /*Тут скорее всего нужен display:block, но пока в заданиях мы этого не делаем*/
-  display: none;
+  display: block;
 }
 
 /* стили подменю главного меню */
@@ -169,7 +168,7 @@ a {
   position: absolute;
   top: 45px;
   left: -6px;
-  z-index: 1;
+  z-index: 2;
   display: none;
   min-width: 143px;
   margin: 0;
@@ -207,7 +206,6 @@ a {
 .subnavigation-item a:hover,
 .subnavigation-item a:focus {
   background-color: rgba(208, 112, 88, 0.2);
-
 }
 
 .subnavigation-item a:active {
@@ -240,11 +238,6 @@ a {
 
 .user-navigation>li:first-child {
   margin-left: 22px;
-}
-
-.site-navigation a,
-.user-navigation a {
-  color: #ffffff;
 }
 
 .search-button,
@@ -294,6 +287,59 @@ a {
 .search-button:focus path {
   fill: #000;
 }
+
+.search-panel:hover .search-field {
+  display: block;
+}
+
+.search-field {
+  position: absolute;
+  right: 0;
+  top: 47px;
+  display: none;
+  margin: 0;
+  padding: 0;
+  padding: 20px 15px;
+  border-radius: 5px;
+  list-style: none;
+  background-color: #f8f7f4;
+}
+
+.search-field input {
+  width: 300px;
+  padding: 9px;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  font: inherit;
+  background-color: #ffffff;
+  color: #323232;
+}
+
+
+.search-field input::-webkit-input-placeholder,
+.search-field input::-moz-placeholder,
+.search-field input:-moz-placeholder,
+.search-field input:-ms-input-placeholder {
+    color:#999999;
+}
+
+.search-field input:hover {
+  padding: 8px;
+  border: 2px solid rgba(154,154,154,0.52);
+  color: #323232;
+}
+
+.search-field input:focus {
+  padding: 8px;
+  border: 2px solid rgba(46,136,228,0.52);
+  color: #323232;
+}
+
+.search-button:hover path,
+.search-button:focus path {
+  fill: #000;
+}
+
 
 .login {
   position: relative;
@@ -369,6 +415,270 @@ a {
 .fill-cart a:hover::before {
   background-image: url("../img/cart-red.svg");
 }
+
+.login:hover .login-form {
+  display: block;
+}
+
+.login-form {
+  position: absolute;
+  right: -3px;
+  top: 45px;
+  z-index: 1;
+  display: none;
+  margin: 0;
+  padding: 20px;
+  border-radius: 5px;
+  list-style: none;
+  background: #f8f7f4;
+}
+
+.login-item {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.login-form input {
+  width: 212px;
+  padding: 12px;
+  font: inherit;
+  color: #323232;
+  background-color: #ffffff;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+}
+
+.login-form input::-webkit-input-placeholder,
+.login-form input::-moz-placeholder,
+.login-form input:-moz-placeholder,
+.login-form input:-ms-input-placeholder {
+    color:#999999;
+}
+
+.login-form input:focus {
+  border: 2px solid  rgba(46,136,228,0.52);
+  padding: 11px;
+  color: #323232;
+}
+
+.login-form input:hover {
+  border: 2px solid rgba(154,154,154,0.52);
+  padding: 11px;
+  color: #323232;
+}
+
+.login-form-forgot,
+.login-form-sin-up {
+  display: block;
+  font-size: 13px;
+  line-height: 24px;
+  color: #323232;
+  text-decoration: underline;
+  background: transparent;
+}
+
+.login-form-forgot:hover,
+.login-form-sin-up:hover,
+.login-form-forgot:focus,
+.login-form-sin-up:focus
+.login-form-forgot:active,
+.login-form-sin-up:active {
+  color: #ffbc9e;
+}
+
+.links-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.links {
+  margin: 0;
+  margin-left: 17px;
+}
+
+.button.login {
+  padding: 10px 23px;
+  border-radius: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+/* всплывашка с корзиной*/
+
+.cart {
+  padding-top: 16px;
+  padding-bottom: 12px;
+}
+
+.fill-cart {
+  position: relative;
+}
+
+.fill-cart:hover .cart-content {
+  display: block;
+}
+
+.cart-content {
+  position: absolute;
+  right: 0px;
+  top: 45px;
+  z-index: 1;
+  display: none;
+  margin: 0;
+  padding: 0;
+  padding: 10px 15px;
+  width: 510px;
+  border-radius: 5px;
+  list-style: none;
+  font-size: 13px;
+  line-height: 16px;
+  color: #323232;
+  background-color: #f8f7f4;
+}
+
+.cart-content>li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.сart-table {
+  margin: 0;
+  padding: 0;
+  width: 520px;
+  min-height: 107px;
+  list-style: none;
+}
+
+.cart-item {
+  position: relative;
+  min-height: 51px;
+  font-size: 13px;
+  line-height: 16px;
+  color: #323232;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.cart-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #323232;
+}
+
+.last-cart-item {
+  padding-bottom: 17px;
+  border-bottom: 1px solid #cacac7;
+}
+
+.last-cart-item .cart-item-title {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.delete-cart-item {
+  position: absolute;
+  left: -2px;
+  top: 25px;
+  width: 9px;
+  height: 9px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.delete-cart-item::before,
+.delete-cart-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 1px;
+  background-color: #231f20;
+}
+
+.delete-cart-item::before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.delete-cart-item::after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.cart-item-img {
+  margin-right: 14px;
+  margin-left: 25px;
+}
+
+.cart-item-title {
+  display: block;
+  width: 217px;
+}
+
+.cart-item-title,
+.cart-item-cost {
+  margin-right: 30px;
+}
+
+.cart-item-cost b {
+  font-size: 13px;
+  line-height: 16px;
+  color: #999999;
+  font-weight: 500;
+}
+
+.cart-cost {
+  min-height: 47px;
+}
+
+.cart-cost span {
+  margin-right: 14px;
+  margin-left: auto;
+  font-size: 15px;
+  line-height: 18px;
+  color: #323232;
+  font-weight: 700;
+}
+
+.cart-order-button {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+/* конец корзины*/
 
 /* конец меню */
 .container {
@@ -1040,6 +1350,80 @@ a.bold-href {
   background-position: 0 0;
 }
 
+/* модальное окно содержимое*/
+.callback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.callback-item {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.modal-callback input,
+.modal-callback textarea {
+  padding: 9px;
+  font: inherit;
+  color: #323232;
+  background-color: #ffffff;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+}
+
+.modal-callback input::-webkit-input-placeholder,
+.modal-callback input::-moz-placeholder,
+.modal-callback input:-moz-placeholder,
+.modal-callback input:-ms-input-placeholder {
+    color:#999999;
+}
+
+.modal-callback textarea::-webkit-input-placeholder,
+.modal-callback textarea::-moz-placeholder,
+.modal-callback textarea:-moz-placeholder,
+.modal-callback textarea:-ms-input-placeholder {
+    color:#999999;
+}
+
+.modal-callback input:focus,
+.modal-callback textarea:focus {
+  color: #323232;
+  border: 2px solid #c7c6c5;
+  padding: 8px;
+}
+
+.modal-callback input[type="text"],
+.modal-callback input[type="email"] {
+  width: 265px;
+}
+
+.modal-callback textarea {
+  margin-bottom: 25px;
+  width: 406px;
+  resize: none;
+}
+
+.callback-submit {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  padding: 10px 25px;
+}
+
+.modal-callback h2 {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  font-size: 24px;
+  line-height: 28px;
+  color: #323232;
+}
+
 /* стили для catalog.html */
 
 .breadcrumbs {
@@ -1707,9 +2091,151 @@ a.bold-href {
   z-index: 10;
 }
 
-.search-field,
-.login-form,
-.modal-mask,
-.cart-content {
+/* модальные окна */
+
+.modal {
+  position: fixed;
   display: none;
+  color: #323232;
+  background-color: #f8f7f4;
+}
+
+.modal-callback {
+  top: 340px;
+  left: 50%;
+  margin-left: -235px;
+  width: 425px;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 18px;
+  height: 20px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 18px;
+  height: 3px;
+  background-color: #231f20;
+}
+
+.modal-close::before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.callback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.callback-item {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.modal-callback input,
+.modal-callback textarea {
+  padding: 9px;
+  font: inherit;
+  color: #323232;
+  background-color: #ffffff;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+}
+
+.modal-callback input::-webkit-input-placeholder,
+.modal-callback input::-moz-placeholder,
+.modal-callback input:-moz-placeholder,
+.modal-callback input:-ms-input-placeholder {
+    color:#999999;
+  }
+
+.modal-callback textarea::-webkit-input-placeholder,
+.modal-callback textarea::-moz-placeholder,
+.modal-callback textarea:-moz-placeholder,
+.modal-callback textarea:-ms-input-placeholder {
+    color:#999999;
+  }
+
+.modal-callback input:focus,
+.modal-callback textarea:focus {
+  border: 2px solid rgba(46,136,228,0.52);
+  padding: 8px;
+  color: #323232;
+}
+
+.modal-callback input:hover,
+.modal-callback textarea:hover {
+  border: 2px solid rgba(154,154,154,0.52);
+  padding: 8px;
+  color: #323232;
+}
+
+.modal-callback input[type="text"],
+.modal-callback input[type="email"] {
+  width: 265px;
+}
+
+.modal-callback textarea {
+  margin-bottom: 25px;
+  width: 406px;
+  resize: none;
+}
+
+.button.callback-submit {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  padding: 10px 25px;
+}
+
+.modal-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.4);
+}
+
+.show-modal {
+  display: block;
+  -webkit-animation: bounce 0.6s;
+  animation: bounce 0.6s;
+}
+
+.error-modal {
+  -webkit-animation: shake 0.6s;
+  animation: shake 0.6s;
+}
+
+.visible {
+  display: block;
 }
