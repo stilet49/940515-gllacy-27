@@ -229,6 +229,11 @@ a {
   align-items: center;
   margin: 0;
   padding: 0;
+  width: 294px;
+}
+
+.catalog-page .user-navigation
+{
   width: 310px;
 }
 
@@ -384,9 +389,9 @@ a {
   background-position: 0 0;
 }
 
-.empty-cart .cart-button {
+/* .empty-cart .cart-button {
   padding-right: 33px;
-}
+} */
 
 .fill-cart .cart-button::before {
   padding-top: 16px;
@@ -595,7 +600,7 @@ a {
 
 .last-cart-item .cart-item-title {
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
 }
 
 .delete-cart-item {
