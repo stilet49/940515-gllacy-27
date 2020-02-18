@@ -1,3 +1,31 @@
+/* roboto-regular - cyrillic_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v20-cyrillic_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v20-cyrillic_latin-regular.woff') format('woff'); /* Modern Browsers */
+
+}
+/* roboto-500 - cyrillic_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v20-cyrillic_latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v20-cyrillic_latin-500.woff') format('woff'); /* Legacy iOS */
+}
+/* roboto-700 - cyrillic_latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v20-cyrillic_latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/roboto-v20-cyrillic_latin-700.woff') format('woff'); /* Legacy iOS */
+}
+
+
+
 body {
   margin: 0;
   padding: 0;
@@ -791,10 +819,10 @@ a {
 .slide-title {
   width: 700px;
   margin: 0 auto;
-  margin-bottom: 28px;
+  margin-bottom: 29px;
   font-size: 60px;
   line-height: 60px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .slider-controls {
@@ -853,10 +881,10 @@ a {
 }
 
 .slide-button {
-  padding: 12px 44px;
-  font-weight: 600;
-  font-size: 31px;
-  line-height: 41px;
+  padding: 10px 42px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
 }
 /* end slider*/
 
@@ -873,7 +901,7 @@ a {
   background-image: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background-image: -o-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background-image: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
-  border-radius: 30px;
+  border-radius: 35px;
   -webkit-box-shadow: 0 1px 1px rgba(172, 16, 0, 1);
   box-shadow: 0 1px 1px rgba(172, 16, 0, 1);
   border: none;
@@ -906,7 +934,7 @@ a {
 
 .spetial-offer {
   padding: 0;
-  padding-top: 13px;
+  padding-top: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -979,7 +1007,7 @@ a {
 /* hits*/
 
 .hits {
-  padding-top: 40px;
+  padding-top: 39px;
   min-height: 363px;
 }
 
@@ -2002,7 +2030,7 @@ a.bold-href {
 .price {
   position: absolute;
   margin: 0;
-  top: 214px;
+  top: 210px;
   font-size: 45px;
   line-height: 45px;
   font-weight: bold;
@@ -2012,13 +2040,13 @@ a.bold-href {
 
 .value {
   margin: 0;
-  padding-right: 35px;
+  /* padding-right: 35px; */
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
 }
 
-.value::after {
+/* .value::after {
   content: url(../img/rub.svg);
   position: absolute;
   top: 4px;
@@ -2027,7 +2055,7 @@ a.bold-href {
   height: 36px;
   background-repeat: no-repeat;
   background-position: 0 0;
-}
+} */
 
 .weight {
   margin-left: -12px;
