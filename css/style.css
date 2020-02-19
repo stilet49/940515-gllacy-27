@@ -102,7 +102,6 @@ a {
   align-self: flex-end;
   margin-right: 10px;
   margin-left: 27px;
-  margin-bottom: 2px;
   width: 180px;
 }
 
@@ -124,7 +123,7 @@ a {
 }
 
 .catalog-navigation {
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 /* стили главного меню */
@@ -302,13 +301,14 @@ a {
 }
 
 .search-panel a {
-  padding: 7px 7px 7px 7px;
+  padding: 7px 8px 7px 7px;
   border-radius: 50%;
 }
 
 .search-panel svg {
   position: relative;
-  top: 2px;
+  top: 4px;
+  left: 1px;
 }
 
 .search-button {
@@ -392,7 +392,7 @@ a {
 }
 
 .cart-button {
-  padding-right: 15px;
+  padding-right: 18px;
 }
 
 .login-button::before,
@@ -408,13 +408,23 @@ a {
 .login-button::before {
   background-image: url("../img/log-in.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 0 1px;
+}
+
+.catalog-navigation .login-button::before {
+  background-image: url("../img/log-in.svg");
+  background-repeat: no-repeat;
+  background-position: -1px 1px;
+}
+
+.catalog-navigation .login-button {
+  padding-left: 42px;
 }
 
 .cart-button::before {
   background-image: url("../img/cart.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 0 1px;
 }
 
 /* .empty-cart .cart-button {
@@ -426,7 +436,11 @@ a {
   padding-bottom: 12px;
   background-image: url("../img/cart-red.svg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: -1px 1px;
+}
+
+.fill-cart .cart-button {
+  padding-left: 42px;
 }
 
 .login-button:focus::before,
@@ -964,14 +978,14 @@ a {
 .spetial-offer p {
   margin: 0;
   padding: 0;
-  padding-left: 18px;
+  padding-left: 19px;
   padding-right: 25px;
   padding-top: 15px;
 }
 
-.offer-lead {
+p.offer-lead  {
   padding-top: 16px;
-  padding-bottom: 13px;
+  /* padding-bottom: 13px; */
   font-size: 35px;
   line-height: 41px;
 }
@@ -995,8 +1009,8 @@ a {
 .spetial-offer .button {
   -ms-flex-item-align: end;
   align-self: flex-end;
-  margin-right: 22px;
-  margin-top: 45px;
+  margin-right: 21px;
+  margin-top: 44px;
   padding: 12px 23px;
 }
 
@@ -1032,6 +1046,7 @@ a {
   min-height: 256px;
   margin: 0px;
   padding: 24px 20px;
+  padding-bottom: 23px;
   border-radius: 15px;
   color: #323232;
   background-color: #f1e8d5;
@@ -1044,6 +1059,7 @@ a {
 .advantages-lead {
   margin: 0;
   padding: 0;
+  padding-top: 1px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
@@ -1084,7 +1100,7 @@ a {
   color: #323232;
   background-color: #ffffff;
   background-image: url("../img/blog-background.jpg");
-  background-position: 17% 39%;
+  background-position: 17% 39.5%;
   background-repeat: no-repeat;
   background-size: auto;
 }
@@ -1127,13 +1143,13 @@ a {
 }
 
 .subscribe-form p {
-  margin: 30px 20px;
+  margin: 29px 21px;
   color: #5a5a5a;
 }
 
 .subscribe-form form {
   margin-left: 21px;
-  padding-top: 5px;
+  padding-top: 7px;
 }
 
 .subscribe-form input::-webkit-input-placeholder,
@@ -1168,8 +1184,8 @@ a {
 .subscribe-button {
   font-size: 18px;
   line-height: 24px;
-  padding: 9px 18px;
-  margin-left: 7px;
+  padding: 10px 18px;
+  margin-left: 9px;
   margin-top: -1px;
 }
 
@@ -1200,7 +1216,7 @@ a {
   top: 62px;
   right: 28px;
   width: 252px;
-  padding-top: 27px;
+  padding-top: 29px;
   padding-left: 25px;
   padding-right: 24px;
   border-radius: 15px;
@@ -1216,21 +1232,27 @@ a {
 
 .map-legend-contacts {
   margin: 0;
-  margin-top: 16px;
+  margin-top: 18px;
   padding: 0;
 }
 
 .map-legend strong {
   display: block;
-  margin-top: 4px;
+  margin-top: 1px;
   font-size: 18px;
   line-height: 24px;
 }
 
+.map-legend-contacts strong {
+  margin-top: 4px;
+  margin-bottom: 2px;
+}
+
 .callback-form-button {
-  margin-top: 25px;
+  margin-top: 23px;
   margin-bottom: 32px;
   padding: 10px 28px;
+  padding-left: 29px;
   font-size: 18px;
   line-height: 24px;
 }
@@ -1241,7 +1263,7 @@ a {
 .main-footer {
   width: 1146px;
   margin: 0 auto;
-  padding: 28px 0px 27px 0px;
+  padding: 29px 0px 27px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1258,8 +1280,8 @@ a {
 }
 
 .social-wrapper {
-  width: 185px;
-  max-width: 185px;
+  width: 186px;
+  max-width: 186px;
 }
 
 .footer-social {
@@ -1487,14 +1509,14 @@ a.bold-href {
 
 .filters fieldset {
   margin: 0;
-  margin-right: 15px;
+  margin-right: 17px;
   padding: 0;
   border: none;
 }
 
 .filters legend {
-  margin-left: 15px;
-  margin-bottom: 7px;
+  margin-left: 16px;
+  margin-bottom: 6px;
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
@@ -1515,7 +1537,7 @@ a.bold-href {
 
 
 .filters-sorting {
-  padding-right: 25px;
+  padding-right: 23px;
   color: #ffffff;
   background-color: transparent;
   border: none;
@@ -1535,7 +1557,7 @@ a.bold-href {
 }
 
 .filters-background {
-  padding: 7px 12px;
+  padding: 7px 14px;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 25px;
 }
@@ -1580,6 +1602,7 @@ a.bold-href {
   line-height: 16px;
   background: none;
   border: none;
+  padding-top: 2px;
 }
 
 .min-price,
@@ -1620,21 +1643,21 @@ a.bold-href {
 
 .scale {
     width: 175px;
-    height: 4px;
+    height: 3px;
     background: rgba(255,255,255,.3);
     margin-left: 5px;
 }
 
 .bar {
   width: 103px;
-  height: 4px;
+  height: 3px;
   background: #fff;
   margin-left: 25px;
 }
 
 .range-toggle {
   position: absolute;
-  top: -8px;
+  top: -9px;
   width: 4px;
   height: 4px;
   background: #ababab;
@@ -1646,11 +1669,11 @@ a.bold-href {
 }
 
 .range-toggle-min {
-  left: 17px;
+  left: 18px;
 }
 
 .range-toggle-max {
-  right: 43px;
+  right: 44px;
 }
 
 .range-toggle:hover {
@@ -1670,8 +1693,8 @@ a.bold-href {
 .filter-option {
   display: inline-block;
   vertical-align: top;
-  padding-left: 33px;
-  padding-right: 14px;
+  padding-left: 26px;
+  padding-right: 20px;
 }
 
 .filter-option label{
@@ -1686,8 +1709,8 @@ a.bold-href {
 .radio-filter + label::before {
   content: "";
   position: absolute;
-  left: -33px;
-  top: 0;
+  left: -32px;
+  top: -1px;
   width: 16px;
   height: 16px;
   border: 3px solid rgba(255,255,255,0.7);
@@ -1702,8 +1725,8 @@ a.bold-href {
 .radio-filter:checked + label::after {
   content: "";
   position: absolute;
-  top: 7px;
-  left: -26px;
+  top: 6px;
+  left: -25px;
   width: 8px;
   height: 8px;
   background-color: rgba(255,255,255,0.7);
@@ -1874,12 +1897,12 @@ a.bold-href {
 .advantages-list li {
   position: relative;
   width: 50%;
-  margin-bottom: 2px;
+
 }
 
 .advantages-list p{
   margin: 0;
-  margin-top: 20px;
+  margin-top: 22px;
   padding-left: 56px;
   padding-right: 10px;
 }
@@ -1927,7 +1950,7 @@ a.bold-href {
 .footer-copyright {
   width: 215px;
   margin-right: -27px;
-  margin-top: -10px;
+  margin-top: -11px;
 }
 
 .footer-copyright p {
@@ -1951,7 +1974,7 @@ a.bold-href {
 }
 
 .filters-first-row {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .sotring {
@@ -1972,6 +1995,7 @@ a.bold-href {
 }
 
 .fat-level .filters-background {
+  padding-left: 18px;
   padding-right: 0px;
 }
 
@@ -2002,7 +2026,7 @@ a.bold-href {
   position: relative;
   width: 267px;
   min-height: 324px;
-  margin-bottom: 38px;
+  margin-bottom: 36px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2024,12 +2048,13 @@ a.bold-href {
 }
 
 .ice-cream-list .ice-cream-img {
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .price {
   position: absolute;
   margin: 0;
+  margin-left: -1px;
   top: 210px;
   font-size: 45px;
   line-height: 45px;
@@ -2040,10 +2065,11 @@ a.bold-href {
 
 .value {
   margin: 0;
-  /* padding-right: 35px; */
+  padding-right: 6px;
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
+  word-spacing: -5px;
 }
 
 /* .value::after {
