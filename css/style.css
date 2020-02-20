@@ -1211,6 +1211,18 @@ p.offer-lead  {
   background-size: cover;
 }
 
+.map-inner {
+  z-index: 1;
+  position: absolute;
+}
+
+.map-wrapper {
+  position: relative;
+  width: 1200px;
+  min-height: 430px;
+  margin: 0 auto;
+}
+
 .map-legend {
   position: absolute;
   top: 62px;
@@ -2172,12 +2184,19 @@ a.bold-href {
 }
 
 .modal-callback {
-  top: 340px;
+  /* top: 340px;
   left: 50%;
-  margin-left: -235px;
-  width: 425px;
+  margin-left: -235px; */
+  height: 443px ;
+  width: 478px;
   padding: 25px;
   border-radius: 15px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  overflow: auto;
 }
 
 .modal-close {
