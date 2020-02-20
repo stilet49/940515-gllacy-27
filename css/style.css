@@ -2184,23 +2184,21 @@ a.bold-href {
   display: none;
   color: #323232;
   background-color: #f8f7f4;
-  z-index: 120;;
+  z-index: 120;
+ left:50%;
+ top:50%;
+ transform:translate(-50%,-50%);
 }
 
 .modal-callback {
   /* top: 340px;
   left: 50%;
   margin-left: -235px; */
-  height: 443px ;
+  min-height: 443px ;
   width: 478px;
   padding: 25px;
   border-radius: 15px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  overflow: auto;
+
 }
 
 .modal-close {
