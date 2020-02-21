@@ -1260,9 +1260,20 @@ p.offer-lead  {
   line-height: 24px;
 }
 
-.map-legend-contacts strong {
+.map-legend-contacts a {
+  text-decoration: none;
+  display: block;
   margin-top: 4px;
+  font-size: 18px;
   margin-bottom: 2px;
+  line-height: 24px;
+  color: #323232;
+  font-weight: 700;
+}
+
+.map-legend-contacts a:focus,
+.map-legend-contacts a:hover {
+  color: #f26843;
 }
 
 .callback-form-button {
