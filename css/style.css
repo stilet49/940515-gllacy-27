@@ -2255,7 +2255,11 @@ a.bold-href {
   left: 0;
   z-index: 30;
   display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-item-align: center;
   align-items: center;
 
   overflow: auto;
@@ -2273,6 +2277,8 @@ a.bold-href {
 }
 
 .visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
