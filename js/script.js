@@ -8,8 +8,15 @@ var name_user = popup.querySelector("[name=callback-name]");
 var email = popup.querySelector("[name=callback-email]");
 var message = popup.querySelector("[name=callnack-message]");
 
-var storageName = localStorage.getItem("name");
-var storageEmail = localStorage.getItem("email");
+var storageName = "";
+var storageEmail = "";
+
+try {
+  storageName = localStorage.getItem("name");
+  storageEmail = localStorage.getItem("email");
+} catch (err) {
+  isStorageSupport = false;
+}
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();

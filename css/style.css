@@ -2118,7 +2118,7 @@ a.bold-href {
 /* модальные окна */
 
 .modal {
-  position: fixed;
+  position: relative;
   display: none;
   color: #323232;
   background-color: #f8f7f4;
@@ -2247,24 +2247,25 @@ a.bold-href {
 }
 
 .modal-mask {
+  z-index: 30;
+  display: none;
+  background-color: rgba(0,0,0,.4);
   width: 100%;
   height: 100%;
   position: fixed;
-  text-align: center;
   top: 0;
   left: 0;
-  z-index: 30;
-  display: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-items: center;
-  -ms-flex-item-align: center;
-  align-items: center;
-
   overflow: auto;
-  background-color: rgba(0,0,0,.4);
 }
+
 .show-modal {
   display: block;
   -webkit-animation: bounce 0.6s;
