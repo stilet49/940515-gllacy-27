@@ -428,10 +428,6 @@ a {
   background-position: 0 1px;
 }
 
-/* .empty-cart .cart-button {
-  padding-right: 33px;
-} */
-
 .fill-cart .cart-button::before {
   padding-top: 16px;
   padding-bottom: 12px;
@@ -986,7 +982,6 @@ a {
 
 p.offer-lead  {
   padding-top: 16px;
-  /* padding-bottom: 13px; */
   font-size: 35px;
   line-height: 41px;
 }
@@ -1220,13 +1215,6 @@ p.offer-lead  {
   height: 430px;
 }
 
-/* .map-wrapper {
-  position: relative;
-  width: 1200px;
-  min-height: 430px;
-  margin: 0 auto;
-} */
-
 .map-legend {
   position: absolute;
   top: 62px;
@@ -1432,7 +1420,6 @@ a.bold-href {
   background-position: 0 0;
 }
 
-
 /* стили для catalog.html */
 
 .breadcrumbs {
@@ -1488,7 +1475,6 @@ a.bold-href {
 .filters input:-ms-input-placeholder {
     color:#999999;
 }
-
 
 .filters-sorting {
   padding-right: 23px;
@@ -1590,16 +1576,16 @@ a.bold-href {
 }
 
 .range-controls {
-    position: absolute;
-    bottom: 17px;
-    left: 17px;
+  position: absolute;
+  bottom: 17px;
+  left: 17px;
 }
 
 .scale {
-    width: 175px;
-    height: 3px;
-    background: rgba(255,255,255,.3);
-    margin-left: 5px;
+  width: 175px;
+  height: 3px;
+  background: rgba(255,255,255,.3);
+  margin-left: 5px;
 }
 
 .bar {
@@ -1807,7 +1793,7 @@ a.bold-href {
 }
 
 .pagination-item a:hover,
-.pagination-item a:focus{
+.pagination-item a:focus {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
@@ -1854,7 +1840,7 @@ a.bold-href {
 
 }
 
-.advantages-list p{
+.advantages-list p {
   margin: 0;
   margin-top: 22px;
   padding-left: 56px;
@@ -1866,7 +1852,7 @@ a.bold-href {
   padding-left: 70px;
 }
 
-.advantages-list li::before{
+.advantages-list li::before {
   content: "";
   position: absolute;
   top: 8px;
@@ -2026,17 +2012,6 @@ a.bold-href {
   word-spacing: -5px;
 }
 
-/* .value::after {
-  content: url(../img/rub.svg);
-  position: absolute;
-  top: 4px;
-  right: 40px;
-  width: 31px;
-  height: 36px;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-} */
-
 .weight {
   margin-left: -12px;
   font-size: 30px;
@@ -2066,16 +2041,6 @@ a.bold-href {
   color: #ffffff;
   cursor: pointer;
 }
-
-/* .ice-cream-card::after {
-  position: absolute;
-  content: '';
-  left: -13px;
-  top: -8px;
-  width: 293px;
-  height: 405px;
-  border-radius: 5px;
-} */
 
 .best-offers::before {
   content: "";
@@ -2124,21 +2089,13 @@ a.bold-href {
   background-color: #f8f7f4;
   z-index: 120;
   text-align: left;
-  /* left:50%;
-  top:50%;
-  transform:translate(-50%,-50%); */
-
 }
 
 .modal-callback {
-  /* top: 340px;
-  left: 50%;
-  margin-left: -235px; */
   min-height: 443px ;
   width: 478px;
   padding: 25px;
   border-radius: 15px;
-
 }
 
 .modal-close {
