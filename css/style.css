@@ -51,6 +51,7 @@ a {
 }
 
 .site-wrapper {
+  min-width: 1200px;
   background-color: #849d8f;
   background-repeat: no-repeat;
   background-position: center top;
