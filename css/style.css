@@ -1602,6 +1602,7 @@ select.filters-sorting::-ms-expand {
 
 .range-toggle {
   position: absolute;
+  padding: 2px 2px;
   top: -9px;
   width: 4px;
   height: 4px;
