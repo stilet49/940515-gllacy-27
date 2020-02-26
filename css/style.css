@@ -1626,6 +1626,9 @@ select.filters-sorting::-ms-expand {
   width: 6px;
   height: 6px;
   cursor: pointer;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  top: -11px;
 }
 
 /* конец кода ползунков */
