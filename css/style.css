@@ -35,7 +35,6 @@ body {
   color: #ffffff;
 }
 
-
 a {
   text-decoration: none;
 }
@@ -80,7 +79,6 @@ a {
 .site-wrapper::after {
   background-image: url("../img/product-slider-3.png");
 }
-
 
 .main-header {
   width: 1200px;
@@ -141,7 +139,6 @@ a {
   -ms-flex-align: center;
   align-items: center;
 }
-
 
 .navigation-item {
   padding-top: 16px;
@@ -354,7 +351,7 @@ a {
 .search-field input::-moz-placeholder,
 .search-field input:-moz-placeholder,
 .search-field input:-ms-input-placeholder {
-    color:#999999;
+  color:#999999;
 }
 
 .search-field input:hover {
@@ -497,7 +494,7 @@ a {
 .login-form input::-moz-placeholder,
 .login-form input:-moz-placeholder,
 .login-form input:-ms-input-placeholder {
-    color:#999999;
+  color:#999999;
 }
 
 .login-form input:focus {
@@ -725,6 +722,7 @@ a {
 /* конец корзины*/
 
 /* конец меню */
+
 .container {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -897,8 +895,8 @@ a {
   font-size: 32px;
   line-height: 44px;
 }
-/* end slider*/
 
+/* end slider*/
 
 .button {
   display: inline-block;
@@ -918,7 +916,6 @@ a {
   border: none;
   cursor: pointer;
 }
-
 
 .button:hover,
 .button:focus {
@@ -1035,7 +1032,6 @@ p.offer-lead  {
 
 /* end hits block*/
 
-
 /* advantages block*/
 
 .advantages {
@@ -1128,7 +1124,6 @@ p.offer-lead  {
   border-bottom-color: #f9cdc4;
 }
 
-
 .subscribe-form {
   color: #323232;
   background-color: #f8f7f4;
@@ -1152,7 +1147,7 @@ p.offer-lead  {
 .subscribe-form input::-moz-placeholder,
 .subscribe-form input:-moz-placeholder,
 .subscribe-form input:-ms-input-placeholder {
-    color:#999999;
+  color:#999999;
 }
 
 .subscribe-form input[type="email"] {
@@ -1272,7 +1267,6 @@ p.offer-lead  {
   line-height: 24px;
 }
 
-
 /* footer */
 
 .main-footer {
@@ -1381,7 +1375,7 @@ p.offer-lead  {
 
 .footer-documents a,
 .copyright {
-    border-bottom: 1px solid #adbdb4;
+  border-bottom: 1px solid #adbdb4;
 }
 
 .footer-documents a:hover,
@@ -1484,6 +1478,10 @@ a.bold-href {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+select.filters-sorting::-ms-expand {
+  display: none;
 }
 
 .filters-sorting:focus,
@@ -1621,9 +1619,11 @@ a.bold-href {
   height: 6px;
   cursor: pointer;
 }
+
 /* конец кода ползунков */
 
 /* жирность */
+
 .filters-background ul {
   padding: 0;
   margin: 0;
@@ -1677,6 +1677,7 @@ a.bold-href {
 .radio-filter:checked:focus + label::after {
   background-color: rgba(255,255,255,1);
 }
+
 /* end жирность*/
 
 /* наполнители */
@@ -1731,9 +1732,11 @@ a.bold-href {
 .checkbox-filter:checked:focus + label::after {
   opacity: 1;
 }
+
 /* end наполнители */
 
 /* кнопка применить */
+
 .filters-submit {
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -1759,6 +1762,7 @@ a.bold-href {
   -webkit-box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
   box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
 }
+
 /* end применить*/
 
 .pagination-list {
@@ -1837,7 +1841,6 @@ a.bold-href {
 .advantages-list li {
   position: relative;
   width: 50%;
-
 }
 
 .advantages-list p {
@@ -1898,7 +1901,6 @@ a.bold-href {
   padding: 0;
   font-size: 12px;
   line-height: 18px;
-
 }
 
 .main-contacts {
@@ -2162,15 +2164,15 @@ a.bold-href {
 .modal-callback input::-moz-placeholder,
 .modal-callback input:-moz-placeholder,
 .modal-callback input:-ms-input-placeholder {
-    color:#999999;
-  }
+  color:#999999;
+}
 
 .modal-callback textarea::-webkit-input-placeholder,
 .modal-callback textarea::-moz-placeholder,
 .modal-callback textarea:-moz-placeholder,
 .modal-callback textarea:-ms-input-placeholder {
-    color:#999999;
-  }
+  color:#999999;
+}
 
 .modal-callback input:focus,
 .modal-callback textarea:focus {
